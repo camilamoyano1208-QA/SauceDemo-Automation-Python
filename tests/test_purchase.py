@@ -10,7 +10,7 @@ def test_complete_purchase_flow(driver):
     cart= Cartpage(driver)
     checkout= CheckoutPage(driver)
 
-    driver.get("https://www.saucedemo.com")
+    login.open_page()
     login.login_to_sauce("standard_user", "secret_sauce") #ingresar
 
     inventory.add_backpack_to_cart() #agregar producto y navegar al carrito

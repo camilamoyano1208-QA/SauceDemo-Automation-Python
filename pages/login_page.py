@@ -2,10 +2,15 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 
 class LoginPage (BasePage):
+    URL = "https://www.saucedemo.com"
+
     USERNAME_INPUT= (By.ID, "user-name")
     PASSWORD_INPUT= (By.ID, "password")
     LOGIN_BTN= (By.ID,"login-button")
     ERROR_MSG= (By.CSS_SELECTOR, "h3[data-test='error']")
+
+    def open_page(self):
+        self.driver.get(self.URL)
 
     def enter_username (self, username): #ACCIONES DE LA PAGINA
         self.type_text(self.USERNAME_INPUT, username)

@@ -5,7 +5,7 @@ def test_add_bag_cart(driver):
     login = LoginPage(driver)
     inventory = InventoryPage(driver)
 
-    driver.get("https://www.saucedemo.com")
+    login.open_page()
     
     # Login directo
     login.login_to_sauce("standard_user", "secret_sauce")

@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 def driver(): 
     chrome_options= Options()
     chrome_options.add_argument("--incognito")
-    chrome_options.add_argument("--headless") #corra en la nube sin ventana
+    #chrome_options.add_argument("--headless") #corra en la nube sin ventana
     chrome_options.add_argument("--no-sandbox")#le dice a chrome que confia en el sitio y no es necesario poner paredes de seguridad extra
     chrome_options.add_argument("--disable-dev-shm-usage")#para que no use la carpeta compartida limitada, use la RAM normal del sistema
     chrome_options.add_argument("--start-maximized")

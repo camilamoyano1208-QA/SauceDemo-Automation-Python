@@ -6,7 +6,7 @@ def test_login_exitoso (driver):
     login= LoginPage(driver)   #se instancia las paginas que se usaran 
     inventory= InventoryPage(driver)
 
-    login.visit("https://www.saucedemo.com/") #abre la web
+    login.open_page()  #abre la web
 
     login.login_to_sauce("standard_user", "secret_sauce") #realiza el login
 
