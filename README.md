@@ -1,22 +1,43 @@
-Framework de Automatización E-Commerce (SauceDemo)
+ Test Automation Framework – SauceDemo
 
-Este proyecto es un framework de pruebas automatizadas profesional utilizando el patrón de diseño **Page Object Model (POM)**.
 
-##  Tecnologías utilizadas
-* **Lenguaje:** Python 3.x
-* **Herramientas de Testing:** PyTest
-* **Automatización Web:** Selenium WebDriver
-* **Reportes:** PyTest-HTML
-* **Infraestructura:** AWS (EC2, S3) e IAM para seguridad.
-* **CI/CD:** GitHub Actions
+This project is a professional end-to-end web test automation framework built with Python, Selenium, and PyTest, following the **Page Object Model (POM)** design pattern.
 
-##  Instalación
-1. Clonar el repositorio.
-2. Crear entorno virtual: `python -m venv venv`.
-3. Activar entorno virtual: `.\venv\Scripts\activate` (Windows).
-4. Instalar dependencias: `pip install -r requirements.txt`.
+It automates key user flows in the SauceDemo application and integrates with GitHub Actions for continuous test execution.
 
-##  Ejecución de Pruebas
-Para ejecutar todos los tests y generar un reporte:
+
+##  Tech Stack
+* Python 3.x
+* PyTest
+* Selenium WebDriver
+* PyTest-HTML
+* GitHub Actions
+* Page Object Model (POM)
+
+##  Test Coverage
+
+This framework covers the following scenarios:
+
+- Valid login with correct credentials  
+- Invalid login with incorrect credentials  
+- Add a product to the cart  
+- Complete checkout flow  
+
+##  Setup and Installation
+
+1. Clone the repository: `https://github.com/camilamoyano1208-QA/SauceDemo-Automation-Python`
+2. Create and activate a virtual environment: 
+  `Windows`
+   python -m venv venv
+   venv\Scripts\activate
+
+3.Install dependencies: `pip install -r requirements.txt`.
+
+##  Run Tests
+Run tests and generate HTML report:
 ```bash
 pytest --html=report.html
+
+## CI/CD
+
+Tests are automatically executed using GitHub Actions on each push.
